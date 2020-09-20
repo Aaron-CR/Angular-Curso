@@ -1,0 +1,10 @@
+<h1> {{ title }} </h1>
+<!-- Este nav le da enlaces para hacer clic, lo que le dice al enrutador qué ruta usar
+(definido en la constante de rutas en AppRoutingModule) -->
+<nav>
+	<a routerLink="/first-component" routerLinkActive="active"> First Component </a> |
+	<a routerLink="/second-component" routerLinkActive="active"> Second Component </a> |
+	<a routerLink="/not-found" routerLinkActive="active"> Not Found </a>
+</nav>
+<!-- Las vistas enrutadas se muestran con este elemento -->
+<router-outlet></router-outlet>
